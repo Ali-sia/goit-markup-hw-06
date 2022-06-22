@@ -17,265 +17,74 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>TEST</title>
-    <style>
-      /* .btn,
-      .btn1 {
-        position: relative;
-
-        display: inline-flex;
-        border: none;
-        margin: 0;
-        padding: 10px 30px;
-        border-radius: 3px;
-        background-color: #008080;
-        color: #fff;
-        font: inherit;
-        cursor: pointer;
-
-        overflow: hidden;
-
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-          color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .btn:hover,
-      .btn:focus {
-        background-color: #d87093;
-        color: aquamarine;
-      }
-      .btn1:hover,
-      .btn1:focus {
-        background-color: darkgoldenrod;
-        color: midnightblue;
-      }
-
-      .btn::before,
-      .btn::after,
-      .btn1::before,
-      .btn1::after {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .btn::before {
-        margin-right: 10px;
-
-        background-color: deeppink;
-      }
-      .btn1::before {
-        position: absolute;
-        top: 50%;
-        right: 30px;
-
-        background-color: maroon;
-
-        transform: translateY(calc(-50% + 35px));
-      }
-
-      .btn:hover::before,
-      .btn:focus::before,
-      .btn1:hover::after,
-      .btn1:focus::after {
-        transform: translateY(-35px);
-      }
-
-      .btn::after {
-        position: absolute;
-        top: 50%;
-        left: 30px;
-
-        background-color: forestgreen;
-
-        transform: translateY(calc(-50% + 35px));
-      }
-      .btn1::after {
-        margin-left: 10px;
-
-        background-color: springgreen;
-      }
-
-      .btn:hover::after,
-      .btn:focus::after,
-      .btn1:hover::before,
-      .btn1:focus::before {
-        transform: translateY(-50%);
-      } */
-      p,
-      h3 {
-        margin: 0;
-        padding: 0;
-      }
-      p {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.03em;
-      }
-
-      .portfolio-link {
-        position: relative;
-
-        width: 370px;
-        outline: 2px dashed darksalmon;
-        margin: 50px auto;
-      }
-      /* .portfolio-link:hover .overlay-text {
-        opacity: 1;
-      } */
-      /* .portfolio-link:hover .portfolio-thumb::before {
-        transform: translateX(0);
-      } */
-
-      .portfolio-thumb {
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* .portfolio-thumb::before {
-        content: '';
-
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        opacity: 0;
-        transform: translateX(-100%);
-
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        background-color: rgba(33, 150, 243, 0.9);
-      } */
-
-      .portfolio-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        transform: translateX(-100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        background-color: rgba(33, 150, 243, 0.9);
-      }
-
-      .portfolio-link:hover .portfolio-overlay {
-        transform: translateX(0);
-      }
-
-      .portfolio-overlay1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        background-color: rgba(33, 150, 243, 0.9);
-      }
-
-      .portfolio-link:hover .portfolio-overlay1 {
-        transform: translateY(0);
-      }
-
-      /* .portfolio-thumb:hover::before {
-        opacity: 1;
-      } */
-      /* .portfolio-thumb:hover .portfolio-overlay {
-        opacity: 1;
-      } */
-
-      .overlay-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        /* opacity: 0; */
-        transform: translate(-50%, -50%);
-
-        width: 322px;
-        background-color: rgb(220, 20, 60);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
-    <div class="portfolio-link">
-      <div class="portfolio-thumb">
-        <img
-          src="./images/portfolio/technokryak.jpg"
-          alt="Открытый на ноутбуке веб-сайт"
-          width="370"
-        />
-        <div class="portfolio-overlay">
-          <div class="overlay-text card1">
-            <p>
-              Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-              это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-            </p>
+    <footer class="footer">
+      <div class="container">
+        <!-- section 1 -->
+        <section class="contact-info">
+          <div class="footer-container">
+            <a href="./index.html" class="logo">
+              <span class="first-word">Web</span><span class="second-word">Studio</span>
+            </a>
+            <address class="addres">
+              <p>г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="mailto:info@devstudio.com" class="addres-link">info@devstudio.com</a>
+              <a href="tel:+380961111111" class="addres-link">+38 096 111 11 11</a>
+            </address>
           </div>
-        </div>
-      </div>
-      <div class="prortfolio-meta">
-        <h3 class="title">Технокряк</h3>
-        <p>Веб-сайт</p>
-      </div>
-    </div>
+        </section>
 
-    <div class="portfolio-link">
-      <div class="portfolio-thumb">
-        <img
-          src="./images/portfolio/project-boxes.jpg"
-          alt="Открытый на ноутбуке веб-сайт"
-          width="370"
-        />
-        <div class="portfolio-overlay1">
-          <div class="overlay-text">
-            <p>
-              Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-              это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-            </p>
+        <!-- section 2 -->
+        <section class="contact-info">
+          <div class="footer-container">
+            <b class="title">присоединяйтесь</b>
+            <ul class="social-list list">
+              <li class="item">
+                <button class="button-link" type="button">
+                  <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons1.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="item">
+                <button class="button-link" type="button">
+                  <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons1.svg#icon-twitter"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="item">
+                <button class="button-link" type="button">
+                  <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons1.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="item">
+                <button class="button-link" type="button">
+                  <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons1.svg#icon-linkedin"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="prortfolio-meta">
-        <h3 class="title">Технокряк</h3>
-        <p>Веб-сайт</p>
-      </div>
-    </div>
-    <!-- <button class="btn">Подписаться</button>
+        </section>
 
-    <button class="btn1">Подписаться</button> -->
-
-    <!-- <div class="portfolio-thumb">
-      <img
-        src="./images/portfolio/technokryak.jpg"
-        alt="Открытый на ноутбуке веб-сайт"
-        width="370"
-      />
-       <div class="portfolio-overlay"> -->
-    <!-- <div class="portfolio-text">
-        <p>
-           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице. -->
-    <!-- тестовый текст. решить проблему
-        </p>
-      </div> -->
-    <!-- </div> -->
-
-    <!-- <div class="portfolio-caption">
-        <h3 class="title">Технокряк</h3>
-        <p>Веб-сайт</p>
+        <svg width="24" height="24">
+          <use href="./images/icons1.svg#icon-send"></use>
+        </svg>
+        <!-- section 3 -->
+        <section class="contact-info form-footer">
+          <b class="title"> Подпишитесь на рассылку</b>
+          <form class="form">
+            <input class="email" type="email" placeholder="E-mail" />
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </section>
       </div>
-    </div>  -->
+    </footer>
   </body>
 </html>
