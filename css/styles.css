@@ -811,6 +811,7 @@ button {
 
   border: none;
   border-radius: 50%;
+
   fill: var(--white-text-color);
   background-color: var(--footer-icon-contact);
 
