@@ -17,7 +17,34 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>TEST</title>
-    <style></style>
+    <style>
+      /* ---------------------------------------------- */
+      .test2 {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        background-color: #000000;
+        /* background-image: url(../images/icons1.svg#icon-send); */
+      }
+      .test2::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: chartreuse;
+        /* background-image: url(../images/icons1.svg#icon-send); */
+      }
+      .test3 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+      .test3::after {
+        content: '';
+      }
+      /* ----------------------------------------------------------- */
+    </style>
   </head>
   <body>
     <footer class="footer">
@@ -72,7 +99,6 @@
             </ul>
           </div>
         </section>
-
         <svg width="24" height="24">
           <use href="./images/icons1.svg#icon-send"></use>
         </svg>
@@ -86,5 +112,10 @@
         </section>
       </div>
     </footer>
+    <br />
+    <div class="test">
+      <button class="test2" type="button">222222222222222</button>
+    </div>
+    <div class="tets3"></div>
   </body>
 </html>
