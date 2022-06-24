@@ -76,28 +76,37 @@
             </svg>
           </button></div>
 
-          <form class="form js-speaker-form">
+          <form class="form js-speaker-form" autocomplete="off">
 
               <b class="title">Оставьте свои данные, мы вам перезвоним</b>
               <div class="form-field">
                 <label class="form-label" for="name">Имя</label>
-                <input
+                <input class="form-input"
                   type="text"
                   name="name" 
                   id="name"
                   placeholder="name"
                   autofocus
                 />
+                <svg class="form-icon" >
+                  <use href="./images/icons1.svg#icon-person"></use>
+                </svg>
               </div>
 
               <div class="form-field">
                 <label class="form-label" for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+                <input  class="form-input" type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+                <svg class="form-icon" >
+                  <use href="./images/icons1.svg#icon-call"></use>
+                </svg>
               </div>
 
               <div class="form-field">
                 <label class="form-label" for="mail">Почта</label>
-                <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+                <input  class="form-input" type="email" name="mail" id="mail" placeholder="my@mail.com" />
+                <svg class="form-icon" >
+                  <use href="./images/icons1.svg#icon-email"></use>
+                </svg>
               </div>
 
               <div class="form-textarea">
@@ -108,12 +117,12 @@
               
               <div class="form-options">
                 <input type="checkbox" name="topic" value="html" id="html" />
-                <label for="html">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <label for="html">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a></label>
               </div>
  
-              
-<div class="form-button"><button class="button primary" type="submit">Отправить</button></div>                          
-        </div>
+              <div class="form-button">
+                <button class="button primary" type="submit">Отправить</button></div>                          
+              </div>
       </div>
       <!-- MODAL WINDOW -->
 
