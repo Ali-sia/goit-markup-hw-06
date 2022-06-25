@@ -67,64 +67,70 @@
       </section>
 
       <!-- MODAL WINDOW -->
-      <!-- <button type="button" data-modal-open>MODAL WINDOW</button> -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <div class="modal-conteiner"><button type="button" class="modal-button" data-modal-close>
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/icons1.svg#icon-close-black"></use>
-            </svg>
-          </button></div>
+          <div class="modal-conteiner">
+            <button type="button" class="modal-button" data-modal-close>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons1.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
 
           <form class="form js-speaker-form" autocomplete="off">
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
-              <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-              <div class="form-field">
-                <label class="form-label" for="name">Имя</label>
-                <input class="form-input"
-                  type="text"
-                  name="name" 
-                  id="name"
-                  placeholder="name"
-                  autofocus
-                />
-                <svg class="form-icon" >
+            <label class="form-field">
+              <span class="label">Имя</span>
+              <input type="name" name="name" placeholder=" " />
+              <div class="form-icon-hero">
+                <svg width="18" height="18">
                   <use href="./images/icons1.svg#icon-person"></use>
                 </svg>
               </div>
+            </label>
 
-              <div class="form-field">
-                <label class="form-label" for="tel">Телефон</label>
-                <input  class="form-input" type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
-                <svg class="form-icon" >
+            <label class="form-field">
+              <span class="label">Телефон</span>
+              <input type="tel" name="tel" placeholder=" " />
+              <div class="form-icon-hero">
+                <svg width="18" height="18">
                   <use href="./images/icons1.svg#icon-call"></use>
                 </svg>
               </div>
+            </label>
 
-              <div class="form-field">
-                <label class="form-label" for="mail">Почта</label>
-                <input  class="form-input" type="email" name="mail" id="mail" placeholder="my@mail.com" />
-                <svg class="form-icon" >
+            <label class="form-field">
+              <span class="label">Почта</span>
+              <input type="email" name="email" placeholder=" " />
+              <div class="form-icon-hero">
+                <svg width="18" height="18">
                   <use href="./images/icons1.svg#icon-email"></use>
                 </svg>
               </div>
+            </label>
 
-              <div class="form-textarea">
-                <label class="form-label" for="feedback">Комментарий</label>
-                <textarea class="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
-              </div>
+            <label class="form-field last-field">
+              <span class="label">Комментарий</span>
+              <textarea name="comment" rows="8" placeholder="Введите текст"></textarea>
+            </label>
 
-              
-              <div class="form-options">
-                <input type="checkbox" name="topic" value="html" id="html" />
-                <label for="html">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a></label>
-              </div>
- 
-              <div class="form-button">
-                <button class="button primary" type="submit">Отправить</button></div>                          
-              </div>
+            <label class="form-check">
+              <input class="checkbox" type="checkbox" name="agreement" />
+              <span class="checkbox-icon"></span>
+              <span class="label last-label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="form-link" href="">Условия договора</a></span
+              >
+            </label>
+
+            <div class="form-button">
+              <button class="button primary" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <!-- MODAL WINDOW -->
+      <!-- /MODAL WINDOW -->
 
       <!--Характеристика-->
       <section class="section">
