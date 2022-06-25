@@ -977,6 +977,7 @@ textarea::placeholder {
 .form-check {
   margin-bottom: 30px;
 
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -985,6 +986,18 @@ textarea::placeholder {
 .form-link {
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-label::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  background: #f0f;
 }
 /* 
 .form-options label {
