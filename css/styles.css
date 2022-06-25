@@ -80,6 +80,12 @@ a {
   cursor: pointer;
 }
 
+button {
+  display: inline-block;
+
+  font-family: inherit;
+}
+
 .list {
   list-style: none;
 
@@ -607,12 +613,6 @@ img {
 }
 
 /* button */
-button {
-  display: inline-block;
-
-  font-family: inherit;
-}
-
 .button {
   padding: 6px 22px;
   min-width: 73px;
@@ -803,18 +803,28 @@ form {
 
 .footer .button.primary {
   position: relative;
+
   display: inline-flex;
+  justify-content: center;
 
   margin: 0;
-  padding: 10px 29px;
+  padding: 10px 28px;
 
   border: none;
 }
 
-.footer .button::after {
+.form-icon-footer {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+  fill: #ffffff;
+}
+
+/* .footer .button::after {
   content: '';
   position: absolute;
-  /* top: 50%; */
   right: 30px;
 
   margin-left: 10px;
@@ -825,11 +835,11 @@ form {
   background-color: crimson;
   background-image: url(images/icons1.svg#icon-send);
   /* background-image: url(../images/icon-send.svg); */
-  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg 
+/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg 
   width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'
   %3E%3Cpath d='M24 0 0 13.5l7.7 2.8 11.8-11-9 12V24l4.3-5 5.5 2L24 0Z' 
   fill='%23fff'/%3E%3C/svg%3E"); */
-}
+/* }  */
 
 /* modal window */
 .backdrop {
