@@ -909,7 +909,22 @@ input:focus + .form-icon-hero {
 }
 
 .form-field input {
-  padding: 12px 42px;
+  padding-left: 42px;
+  height: 40px;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .form-field {
@@ -1012,22 +1027,4 @@ textarea::placeholder {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
-}
-
-input {
-  height: 40px;
-}
-
-input,
-textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid var(--accent-color);
 }
