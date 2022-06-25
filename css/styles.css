@@ -113,7 +113,7 @@ button {
   margin-right: auto;
   padding: 0 15px;
 
-  max-width: 1200px;
+  width: 1200px;
 }
 
 .visually-hidden {
@@ -155,8 +155,7 @@ img {
 }
 
 .site-nav .item + .item,
-.site-auto .item + .item,
-.feature-list .item + .item {
+.site-auto .item + .item {
   margin-left: 50px;
 }
 
@@ -262,24 +261,24 @@ img {
 
 /*hero section*/
 .hero {
-  width: 100%;
-  text-align: center;
-}
-
-.hero-bg {
   padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
-
   max-width: 1600px;
+
+  text-align: center;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bgi.png);
+}
+
+.hero-bg {
+  width: 100%;
 
   background-color: var(--hero-bgc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bgi.png);
 }
 
 .hero-title {
@@ -337,6 +336,10 @@ img {
 
 .feature-list .item {
   max-width: 270px;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
 }
 
 .icon-feature {
@@ -721,6 +724,7 @@ img {
 
 .footer .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .contact-info .title {
@@ -739,6 +743,10 @@ img {
 
   max-width: 570px;
   max-height: 86px;
+}
+
+.form-footer .email {
+  color: var(--white-text-color);
 }
 
 /* button-link */
@@ -790,8 +798,6 @@ form {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
-/* ???? */
 
 .form .email::placeholder {
   font-weight: 400;
