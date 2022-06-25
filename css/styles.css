@@ -264,18 +264,13 @@ img {
   padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
+  width: 1600px;
 
   text-align: center;
-
+  background-color: var(--hero-bgc);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bgi.png);
-}
 
-.hero-bg {
-  width: 100%;
-
-  background-color: var(--hero-bgc);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1036,6 +1031,10 @@ textarea::placeholder {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
+}
+
+input {
+  height: 40px;
 }
 
 input,
